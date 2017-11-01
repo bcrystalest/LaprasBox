@@ -1,1 +1,9 @@
 readme!
+
+使用 zip 命令压缩文件，并结合 split 命令来分卷：
+zip - largefile | split -b 500k
+举例：
+zip - ./tomcat.dmg |split -b 500k
+上述命令将文件 largefile 压缩成 zip 包并分卷成不超过 500k 的文件，分解后文件名默认是 x* ，后缀为 2 位a-z 字母，如 aa、ab。
+要合并已分解的文件，可使用cat命令恢复成 zip 文件后使用 unzip 或其它主流解压软件解压：
+cat x* > file.zip
