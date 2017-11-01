@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+use_frameworks!
+project '/Users/chenweili/LaprasBox/LaprasBox.xcodeproj'
+target "LaprasBox" do
+use_frameworks!
+pod 'SDCycleScrollView','~> 1.73'
+end

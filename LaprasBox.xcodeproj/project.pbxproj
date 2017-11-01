@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1750DF607F783807F47D52 /* libPods-LaprasBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 176BEDC284481E769B78C071 /* libPods-LaprasBox.a */; };
 		4F3912931FA979130096EB79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3912921FA979130096EB79 /* AppDelegate.m */; };
 		4F3912961FA979130096EB79 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F3912951FA979130096EB79 /* ViewController.mm */; };
 		4F3912991FA979130096EB79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3912971FA979130096EB79 /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		176BEDC284481E769B78C071 /* libPods-LaprasBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LaprasBox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F39128E1FA979130096EB79 /* LaprasBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaprasBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3912911FA979130096EB79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4F3912921FA979130096EB79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +90,8 @@
 		4F3912E41FA98E7B0096EB79 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		4F3912E61FA98E810096EB79 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		4F3912E81FA98EB90096EB79 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		A9B420D8F322CC667E2074DF /* Pods-LaprasBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaprasBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaprasBox/Pods-LaprasBox.debug.xcconfig"; sourceTree = "<group>"; };
+		D11EBAA04722ABBAC939F058 /* Pods-LaprasBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaprasBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaprasBox/Pods-LaprasBox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				4F3912CB1FA98E230096EB79 /* CoreGraphics.framework in Frameworks */,
 				4F3912C91FA98E1F0096EB79 /* libz.tbd in Frameworks */,
 				4F3912C71FA98E1A0096EB79 /* libc++.tbd in Frameworks */,
+				1C1750DF607F783807F47D52 /* libPods-LaprasBox.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +146,7 @@
 				4F3912B41FA979130096EB79 /* LaprasBoxUITests */,
 				4F39128F1FA979130096EB79 /* Products */,
 				4F3912C51FA98E1A0096EB79 /* Frameworks */,
+				EAE8FC0DD2E3CF4A2222172C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,8 +216,18 @@
 				4F3912CA1FA98E230096EB79 /* CoreGraphics.framework */,
 				4F3912C81FA98E1F0096EB79 /* libz.tbd */,
 				4F3912C61FA98E1A0096EB79 /* libc++.tbd */,
+				176BEDC284481E769B78C071 /* libPods-LaprasBox.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAE8FC0DD2E3CF4A2222172C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9B420D8F322CC667E2074DF /* Pods-LaprasBox.debug.xcconfig */,
+				D11EBAA04722ABBAC939F058 /* Pods-LaprasBox.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F3912BA1FA979130096EB79 /* Build configuration list for PBXNativeTarget "LaprasBox" */;
 			buildPhases = (
+				0EB59EE25C0CFA114A7703AE /* [CP] Check Pods Manifest.lock */,
 				4F39128A1FA979130096EB79 /* Sources */,
 				4F39128B1FA979130096EB79 /* Frameworks */,
 				4F39128C1FA979130096EB79 /* Resources */,
+				B97582C39D39345E3AA5B81E /* [CP] Embed Pods Frameworks */,
+				7BCB0F8462C6C16A20236831 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,6 +360,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EB59EE25C0CFA114A7703AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7BCB0F8462C6C16A20236831 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaprasBox/Pods-LaprasBox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B97582C39D39345E3AA5B81E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaprasBox/Pods-LaprasBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F39128A1FA979130096EB79 /* Sources */ = {
@@ -510,10 +577,11 @@
 		};
 		4F3912BB1FA979130096EB79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9B420D8F322CC667E2074DF /* Pods-LaprasBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J995UNL2CV;
+				DEVELOPMENT_TEAM = 29DEX85WKV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LaprasBox",
@@ -521,6 +589,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LaprasBox/one.pch";
 				INFOPLIST_FILE = LaprasBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-34112686-163.com.LaprasBox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,10 +599,11 @@
 		};
 		4F3912BC1FA979130096EB79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11EBAA04722ABBAC939F058 /* Pods-LaprasBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J995UNL2CV;
+				DEVELOPMENT_TEAM = 29DEX85WKV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LaprasBox",
@@ -541,6 +611,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LaprasBox/one.pch";
 				INFOPLIST_FILE = LaprasBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-34112686-163.com.LaprasBox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
