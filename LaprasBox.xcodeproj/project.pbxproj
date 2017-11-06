@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1C1750DF607F783807F47D52 /* libPods-LaprasBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 176BEDC284481E769B78C071 /* libPods-LaprasBox.a */; };
+		4F0F2EE61FA9D4F7009B6099 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F2EE51FA9D4F7009B6099 /* ViewController2.m */; };
+		4F0F2EE71FA9D55C009B6099 /* VDCameraAndPhotoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F2EE31FA9D49E009B6099 /* VDCameraAndPhotoTool.m */; };
 		4F3912931FA979130096EB79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3912921FA979130096EB79 /* AppDelegate.m */; };
 		4F3912961FA979130096EB79 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F3912951FA979130096EB79 /* ViewController.mm */; };
 		4F3912991FA979130096EB79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3912971FA979130096EB79 /* Main.storyboard */; };
@@ -55,6 +57,12 @@
 
 /* Begin PBXFileReference section */
 		176BEDC284481E769B78C071 /* libPods-LaprasBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LaprasBox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0F2EE01FA9D49E009B6099 /* UIImage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		4F0F2EE11FA9D49E009B6099 /* UIImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		4F0F2EE21FA9D49E009B6099 /* VDCameraAndPhotoTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDCameraAndPhotoTool.h; sourceTree = "<group>"; };
+		4F0F2EE31FA9D49E009B6099 /* VDCameraAndPhotoTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDCameraAndPhotoTool.m; sourceTree = "<group>"; };
+		4F0F2EE41FA9D4F7009B6099 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		4F0F2EE51FA9D4F7009B6099 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		4F39128E1FA979130096EB79 /* LaprasBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaprasBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3912911FA979130096EB79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4F3912921FA979130096EB79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,6 +146,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F0F2EDF1FA9D49E009B6099 /* VDCameraAndPhotoTool */ = {
+			isa = PBXGroup;
+			children = (
+				4F0F2EE01FA9D49E009B6099 /* UIImage+Extension.h */,
+				4F0F2EE11FA9D49E009B6099 /* UIImage+Extension.m */,
+				4F0F2EE21FA9D49E009B6099 /* VDCameraAndPhotoTool.h */,
+				4F0F2EE31FA9D49E009B6099 /* VDCameraAndPhotoTool.m */,
+			);
+			path = VDCameraAndPhotoTool;
+			sourceTree = "<group>";
+		};
 		4F3912851FA979130096EB79 = {
 			isa = PBXGroup;
 			children = (
@@ -163,11 +182,14 @@
 		4F3912901FA979130096EB79 /* LaprasBox */ = {
 			isa = PBXGroup;
 			children = (
+				4F0F2EDF1FA9D49E009B6099 /* VDCameraAndPhotoTool */,
 				4F3912E81FA98EB90096EB79 /* opencv2.framework */,
 				4F3912911FA979130096EB79 /* AppDelegate.h */,
 				4F3912921FA979130096EB79 /* AppDelegate.m */,
 				4F3912941FA979130096EB79 /* ViewController.h */,
 				4F3912951FA979130096EB79 /* ViewController.mm */,
+				4F0F2EE41FA9D4F7009B6099 /* ViewController2.h */,
+				4F0F2EE51FA9D4F7009B6099 /* ViewController2.m */,
 				4F3912C41FA98D470096EB79 /* one.pch */,
 				4F3912971FA979130096EB79 /* Main.storyboard */,
 				4F39129A1FA979130096EB79 /* Assets.xcassets */,
@@ -414,7 +436,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F0F2EE71FA9D55C009B6099 /* VDCameraAndPhotoTool.m in Sources */,
 				4F3912961FA979130096EB79 /* ViewController.mm in Sources */,
+				4F0F2EE61FA9D4F7009B6099 /* ViewController2.m in Sources */,
 				4F3912A11FA979130096EB79 /* main.m in Sources */,
 				4F3912931FA979130096EB79 /* AppDelegate.m in Sources */,
 			);
